@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+<!-- 
+=======================================================================
+Document:         CSCI3030_T04P03_ICA.html
+authors:          YOUR_NAME_HERE
+Student Number:   YOUR_STUDENT_CWID_HERE
+Organization:     The University of Louisiana at Monroe
+Class:            CLASS, SEMESTER, YEAR
+Assignment:       Assignemnt XX
+Due Date:         MONTH, DAY, YEAR
+
+Description:      This document displays ...
+
+Honor Statement:  My signature below attests to the fact that I have
+                  neither given nor received aid on this project.
+
+
+X _____________________________________________________________________
+
+
+=======================================================================
+-->
+
+<head>
+
+<title>DOCUMENT TITLE HERE</title>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="description" content="DESCRIPTION_HERE" />
+<meta name="keywords" content="KEYWORDS,SEPARATED,BY,COMMAS,HERE" />
+<meta name="authors" content="YOUR_NAME_HERE" />
+<meta name="revised" content="DATE_HERE" />
+
+<style type="text/css">
+
+</style>
+
+<script type="application/JavaScript">
+<!--
+   function pig(Word)
+   {
+      var pigWord = Word.substring(1);
+      pigWord=pigWord+Word.charAt(0)+"ay";
+      return pigWord;
+   }
+
+
+   function processForm()
+   {
+      var origPhrase="";
+      origPhrase = plgf.origPhrase.value;
+      var arr = origPhrase.split(" ");
+      var x = 0;
+      while(x<arr.length)
+      {
+         arr[x]=pig(arr[x]);
+         x+=1;
+      }
+      var plPhrase="";
+      x=0;
+      while(x<arr.length)
+      {
+         plPhrase= plPhrase+arr[x]+ " ";
+         x+=1;
+      }
+      plgf.plPhrase.value=plPhrase;
+      
+   }
+
+// -->
+</script>
+
+</head>
+
+<body>
+
+   <form id="plgf" action="JavaScript:processForm()">
+   
+      <p>
+         Enter Phrase: <br />
+         <input type="text" name="origPhrase" size="70" />
+      </p>
+	  
+      <p>
+         Pig Latin Phrase: <br />
+         <textarea name="plPhrase" rows="5" cols="70">
+         </textarea>
+      </p>
+	  
+      <p>
+         <input type="button" name="submit" value="Submit" onclick="processForm()" />
+         <input type="reset" name"reset" value="Reset" />
+      </p>
+	  
+   </form>
+   
+</body>
+
+</html>
